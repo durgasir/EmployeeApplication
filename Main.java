@@ -15,7 +15,6 @@ public class Main {
 
 
        String department="";
-      //  System.out.print("Enter Department: ");//
        System.out.print("\nPlease enter the department from the following:\n1 Technical \n2 Admin\n3  Human Resource \n4. Legal \nEnter the department code: ");
         Scanner in = new Scanner(System.in);
         int depChoice = in.nextInt();
@@ -24,13 +23,10 @@ public class Main {
         } else if (depChoice == 2) {
             department="admin";
         } else if (depChoice == 3) {
-            // return "accounting";
             department="humanresource";
         } else if(depChoice==4) {
             department="legal";
         }
-
-      //  String department = scanner.nextLine();
 
 
        Employee newEmployee = new Employee(firstName, lastName, department);
